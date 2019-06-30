@@ -20,7 +20,7 @@ class DemoForm extends BaseForm
     {
         return [
             // 验证6到30个字符的字符串
-            ['name', 'string', 'min' => 6, 'max' => 30, 'maxMinMessage' => '名字必须在{min}213~{max}个字符范围内'],
+            ['name', 'string', 'min' => 6, 'max' => 30, 'maxMinMessage' => '名字必须在{min}~{max}个字符范围内'],
             // 验证年龄必须是整数
             ['age', 'integer', 'min' => 18, 'max' => 100],
             // 集合验证器，验证性别必须是1或2
