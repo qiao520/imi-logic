@@ -1,0 +1,9 @@
+version: '3.4'
+services:
+  swoole:
+    image: "twosee/swoole-coroutine"
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./:/php_workspace/imi-logic
+    command: php /php_workspace/imi-logic/app/bin/imi server/start
