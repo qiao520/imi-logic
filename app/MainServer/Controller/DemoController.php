@@ -7,8 +7,6 @@ use Imi\Server\View\Annotation\View;
 use Imi\Server\Route\Annotation\Route;
 use Imi\Server\Route\Annotation\Action;
 use Imi\Server\Route\Annotation\Controller;
-use Imi\Server\Route\Annotation\Middleware;
-use ImiDemo\HttpDemo\MainServer\Enum\Status;
 use Logic\Form\DemoForm;
 
 /**

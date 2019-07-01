@@ -7,7 +7,7 @@
 declare(strict_types=1);
 
 namespace Logic\Form;
-echo 'dada';
+
 use Roers\SwLogic\BaseForm;
 
 class DemoForm extends BaseForm

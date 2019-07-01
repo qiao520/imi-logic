@@ -1,7 +1,7 @@
 version: '3.4'
 services:
   swoole:
-    image: "twosee/swoole-coroutine"
+    image: "kakuilan/swoole-docker"
     ports:
       - "8080:8080"
     volumes:
