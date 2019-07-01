@@ -16,7 +16,7 @@ IMI框架很优秀，但有点过渡使用注解了（个人意见哈），我�
 
 ---
 
-# Logic层热加载
+# 如何实现Logic层热加载
 
 > 我将业务逻辑层（Logic）抽离独立出来，该层不受服务启动时扫描，会在work进程启动后进行加载，所以，可以通过$server->reload接口对代码进行重载，达到热加载效果，不用频繁重启服务，以加快开发调试速度。
 
@@ -32,13 +32,12 @@ IMI框架很优秀，但有点过渡使用注解了（个人意见哈），我�
 
 注：192.168.99.100是我window电脑上安装的虚拟机ip
 
-# 表单验证
+# 表单验证使用示例
 
-组件仓库地址：https://github.com/qiao520/swoole-logic
+组件仓库：https://github.com/qiao520/swoole-logic
+组件安装：composer require qiao520/swoole-logic:~1.0.0
 
-代码示例：
-
-表单Form类
+表单Form类（示例代码）
 ```
 <?php
 declare(strict_types=1);
@@ -130,7 +129,7 @@ class DemoForm extends BaseForm
 }
 
 ```
-
+---
 demo.php
 ```
 <?php
@@ -195,7 +194,7 @@ if ($form->validate()) {
 
 debug(str_repeat('-------', 10));
 ```
-
+---
 执行结果
 ```
 验证通过，业务处理结果：{"name":"zhongdalong","age":"31"}
@@ -209,6 +208,6 @@ debug(str_repeat('-------', 10));
 ```
 
 
-# 喜欢的朋友点个赞
+# 最后
 
-有什么意见或bug，联系我QQ：380552499
+喜欢的朋友点个赞，有什么意见想法或bug，联系我QQ：380552499
